@@ -43,7 +43,7 @@ class Game
   def play_game
     question = Question.new
     puts "\n"
-    puts "---- NEW TURN ----"
+    puts "----- NEW TURN -----"
     puts "\n"
     puts "#{@current_player.name}: What does #{question.num1} plus #{question.num2} equal?"
     answer = gets.chomp.to_i
@@ -70,8 +70,14 @@ class Game
       puts "\n"
       puts "#{@current_player.name} wins the game with a score of #{@current_player.life}/3"
       puts "\n"
+      puts "Thank you for playing, see you soon!"
+      puts "\n"
+      puts "\n"
+
     end
 
   end
+
+  # Use puts, raise some_val.inspect, and byebug to help with debugging
 
 
